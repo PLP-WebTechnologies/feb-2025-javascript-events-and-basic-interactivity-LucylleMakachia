@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to the Ultimate JavaScript Playground! 🎉</h1>
+
+  <section>
+    <h2>1. Event Handling 🎈</h2>
+    <button id="myButton">Click Me!</button>
+    <div id="hoverMe" style="padding: 20px; border: 1px solid #ccc; margin-top: 10px;">Hover Over Me</div>
+    <p id="keyDisplay">No key pressed yet.</p>
+    <div id="doubleClickMe" style="padding: 20px; border: 1px solid #ccc; margin-top: 10px;">Double Click Me!</div>
+    <div id="longPressMe" style="padding: 20px; border: 1px solid #ccc; margin-top: 10px;">Long Press Me (hold for 1.5 seconds)!</div>
+  </section>
+
+  <section>
+    <h2>2. Interactive Elements 🎮</h2>
+    <button id="changeButton" style="background-color: green; color: white; padding: 10px;">Change to Red</button>
+
+    <div class="image-gallery" style="max-width: 300px; margin-top: 20px;">
+      <img src="images/chick.jpg" alt="Chick" class="gallery-image" style="display: block; width: 100%;">
+      <img src="images/kitten.jpg" alt="Kitten" class="gallery-image" style="display: none; width: 100%;">
+      <img src="images/puppy.jpg" alt="Puppy" class="gallery-image" style="display: none; width: 100%;">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <div class="tabs" style="margin-top: 20px;">
+      <button class="tab-button active" data-tab="tab1">Tab 1</button>
+      <button class="tab-button" data-tab="tab2">Tab 2</button>
+      <button class="tab-button" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content active" id="tab1" style="border: 1px solid #ccc; padding: 10px; display: block;">Content for Tab 1</div>
+    <div class="tab-content" id="tab2" style="border: 1px solid #ccc; padding: 10px; display: none;">Content for Tab 2</div>
+    <div class="tab-content" id="tab3" style="border: 1px solid #ccc; padding: 10px; display: none;">Content for Tab 3</div>
+
+    <div class="accordion" style="margin-top: 20px; max-width: 300px;">
+      <div class="accordion-item">
+        <div class="accordion-header" style="background-color: #eee; padding: 10px; cursor: pointer;">Header 1</div>
+        <div class="accordion-content" style="padding: 10px; display: none; border: 1px solid #ccc; border-top: none;">Content for Header 1</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" style="background-color: #eee; padding: 10px; cursor: pointer;">Header 2</div>
+        <div class="accordion-content" style="padding: 10px; display: none; border: 1px solid #ccc; border-top: none;">Content for Header 2</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" style="background-color: #eee; padding: 10px; cursor: pointer;">Header 3</div>
+        <div class="accordion-content" style="padding: 10px; display: none; border: 1px solid #ccc; border-top: none;">Content for Header 3</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <button id="animatedBtn" class="animated-button" style="padding: 10px;">Animate Me!</button>
+      <div id="animatedDiv" style="width: 50px; height: 50px; background-color: red; position: relative; left: 0; margin-top: 10px;"></div>
+      <button id="startAnimation" style="margin-top: 10px;">Start Animation</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Form Validation 📋✅</h2>
+    <form id="myForm" style="margin-top: 20px;">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <p class="error-message" id="nameError" style="color: red;"></p>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <p class="error-message" id="emailError" style="color: red;"></p>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <p class="error-message" id="passwordError" style="color: red;"></p>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
